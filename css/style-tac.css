@@ -1,0 +1,72 @@
+/*AQUI DEFINIMOS LOS ESTILOS DE LA PÁGINA DE CONTACTO*/
+.content2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+.container{
+    width: 500px;
+    max-width: 500px;
+    height: 450px;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #37474F;
+}
+.container h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    color: black;
+}
+.container p{
+    text-align: center;
+    margin: 15px 20px;
+    color: rgb(82, 81, 81);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+form input{
+    margin: 5px 0;
+    height: 35px;
+    padding-left: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(82, 81, 81);
+    font-size: 16px;
+}
+form input:focus{
+    border: 2px solid black;
+}
+form #msg{
+    margin: 5px 0;
+    outline: none;
+    padding: 7px 7px;
+    z-index: 999;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    font-size: 16px;
+}
+form #msg:focus{
+    border: 2px solid black;
+}
+#btn{
+    background-color: #7CB342;
+    color: white;
+    font-weight: bold;
+    font-size: 17.5px;
+    height: 45px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+#btn:hover{
+    background-color: #FFC107;
+}

@@ -1,0 +1,46 @@
+/*AQUI ESTAN TODOS LOS ESTILOS DE LA PÁGINA DE PROYECTO*/
+/*ESTILOS DE FUENTES DE GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rum+Raisin&family=Train+One&display=swap');
+.content2{
+    padding:  15px;
+}
+.seccion1{
+    background-color: #360259;
+    text-align: center;
+    padding: 30px;
+}
+.seccion2{
+    background-color: #3F8EBF;
+    text-align: center;
+    padding: 30px;
+}
+.seccion3{
+    background-color: #ADBF24;
+    text-align: center;
+    padding: 30px;
+}
+img{
+    margin: 15px;
+    width: 270px;
+    height: 198px;
+    box-shadow: 0 0 10px 5px ;
+}
+a{
+    color: white;
+    font-size: 25px;
+}
+a:hover{
+    color: yellow;
+    
+}
+h1{
+    padding-top: 2%;
+    font-family: 'Bungee Shade', cursive;
+}
+h2{
+    font-family: 'Train One', cursive;
+}
+p{
+    font-size: 18px;
+    font-family: 'Rum Raisin', sans-serif;
+}

@@ -1,0 +1,48 @@
+/*AQUI ESTAN TODOS LOS ESTILOS DE LA PÁGINA DE ESTUDIO*/
+
+/*FUENTES DE GOOGLE DESDE SERVIDOR*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nosifer&display=swap');
+
+.content2{
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    padding: 3%;    
+}
+.content3{
+    
+    padding: 5%;
+    overflow: hidden;
+    
+}
+.cajas{
+    border-radius: 5px;
+    background-color: #34c88f;
+    width: 45%;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 10px 10px -5px;
+}
+img{
+    width: 250px;
+    height: 180px;
+    box-shadow: 0 0 10px 5px ;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px 50px 30px;
+}
+
+h1{
+    font-family: 'Nosifer', cursive;
+    font-size: 30px;
+        
+}
+h3{
+    text-decoration: underline;
+    color: #424242;
+}
+p{
+    text-align: justify;
+    font-family: 'Bree Serif', serif;;
+    color: #424242;
+}

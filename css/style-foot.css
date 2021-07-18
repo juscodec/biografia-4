@@ -1,0 +1,17 @@
+
+/*AQUI DEFINIMOS LOS ESTILOS DE FOOTER DEL PIE DE LA PÁGINA*/
+
+#pie{
+  background-color: #263238;
+  padding: 0;	
+  width: 90%;	
+  max-width: 1000px;
+  color: white;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 15px;
+    
+}
+.copy{
+  padding: 15px;
+}

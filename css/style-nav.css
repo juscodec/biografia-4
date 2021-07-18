@@ -1,0 +1,34 @@
+
+/*AQUI DEFINIMMOS LOS ESTILOS DE BARRA DE BNAVEGACION*/
+nav{
+    margin-top: 10px;
+  }
+  .menu{
+    border-radius: 10px 10px 0 0;
+    list-style: none;
+    padding: 0;
+    background: #263238;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    display: block;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+    
+  }
+  
+  .menu li a:hover{
+    /*background: #1976D2;*/
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  }

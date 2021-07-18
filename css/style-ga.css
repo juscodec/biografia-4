@@ -1,0 +1,90 @@
+/*AQUI ESTAN TODOS LOS ESTILOS DE LA PÁGINA DE GALERIA*/
+
+h2{
+	padding-top: 2%;
+    font-family: 'Faster One', cursive;
+    font-size: 45px;
+    color: #3ef15d;
+  }
+.gallerybox {
+	display: flex;
+	justify-content: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.gallerybox-gallery {
+	--gallerybox-nextprev-padding: 5vw;
+	--gallerybox-nextprev-move: 0.2em;
+	--gallerybox-nextprev-hover: 0.1em;
+	
+	max-width: 80vmax;
+	
+	display: grid;
+	/*grid-template-columns: auto;
+	grid-template-rows: auto;
+	grid-template-areas: "main";*/
+}
+
+
+.gallerybox-item {
+	grid-area: main;
+	z-index: 2;
+}
+
+.gallerybox-item > figcaption {
+	background: hsla(108deg 89% 55% / 75%);
+	position: absolute;
+	bottom: 0.25em; left: 0; right: 0;
+	padding: 0.75em 1em;
+	text-align: center;
+}
+
+.gallerybox-gallery > .gallerybox-item:target {
+	display: block;
+	z-index: 100;
+}
+
+.gallerybox-item {
+	position: relative;
+}
+.gallerybox-item img {
+	max-width: 100%;
+	width: 800px;
+	height: 500px;
+}
+:where(.gallerybox-prev, .gallerybox-next) {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: absolute; top: 0;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 4em;
+	color: hsla(0, 0%, 100%, 0.8) !important;
+	text-decoration: none;
+	transform: none;
+	transition: transform 0.25s;
+}
+.gallerybox-item > .gallerybox-prev {
+	padding-left: var(--gallerybox-nextprev-padding);
+	left: 0;
+}
+.gallerybox-item > .gallerybox-next {
+	padding-right: var(--gallerybox-nextprev-padding);
+	right: 0;
+}
+
+
+:where(.gallerybox-prev, .gallerybox-next):hover {
+	color: hsla(0, 0%, 100%, 1) !important;
+}
+:is(.gallerybox-prev, .gallerybox-next):active {
+	color: hsla(0, 0%, 100%, 1) !important;
+}
+.gallerybox-next:hover { transform: translateX(calc(var(--gallerybox-nextprev-hover) * -1)); }
+.gallerybox-prev:hover { transform: translateX(var(--gallerybox-nextprev-hover)); }
+
+.gallerybox-prev:active { transform: translateX(calc(var(--gallerybox-nextprev-move) * -1)); }
+.gallerybox-next:active { transform: translateX(var(--gallerybox-nextprev-move)); }
+
